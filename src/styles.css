@@ -1,0 +1,199 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-olive: var(--olive);
+  --color-olive-deep: var(--olive-deep);
+  --color-khaki: var(--khaki);
+  --color-gunmetal: var(--gunmetal);
+  --color-rust: var(--rust);
+
+  --font-display: "Oswald", "Impact", sans-serif;
+  --font-stencil: "Black Ops One", "Oswald", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.125rem;
+
+  /* Military palette */
+  --background: oklch(0.16 0.012 110); /* near black with olive tint */
+  --foreground: oklch(0.92 0.018 95); /* warm bone */
+  --card: oklch(0.2 0.014 110);
+  --card-foreground: oklch(0.92 0.018 95);
+  --popover: oklch(0.18 0.014 110);
+  --popover-foreground: oklch(0.92 0.018 95);
+
+  --primary: oklch(0.72 0.1 95); /* khaki accent */
+  --primary-foreground: oklch(0.16 0.012 110);
+  --secondary: oklch(0.26 0.018 115);
+  --secondary-foreground: oklch(0.92 0.018 95);
+  --muted: oklch(0.22 0.012 110);
+  --muted-foreground: oklch(0.66 0.022 100);
+  --accent: oklch(0.55 0.09 120); /* olive */
+  --accent-foreground: oklch(0.1 0.01 110);
+  --destructive: oklch(0.5 0.18 28);
+  --destructive-foreground: oklch(0.98 0.005 95);
+  --border: oklch(0.3 0.018 115 / 70%);
+  --input: oklch(0.26 0.014 110);
+  --ring: oklch(0.55 0.09 120);
+
+  --olive: oklch(0.45 0.08 120);
+  --olive-deep: oklch(0.3 0.05 120);
+  --khaki: oklch(0.78 0.08 92);
+  --gunmetal: oklch(0.28 0.008 240);
+  --rust: oklch(0.55 0.14 50);
+}
+
+.dark {
+  --background: oklch(0.16 0.012 110);
+  --foreground: oklch(0.92 0.018 95);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html,
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+@utility stencil {
+  font-family: var(--font-stencil);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-khaki);
+}
+
+@utility grid-tactical {
+  background-image:
+    linear-gradient(to right, oklch(0.55 0.09 120 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.55 0.09 120 / 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@utility hairline {
+  border-color: oklch(0.55 0.09 120 / 0.35);
+}
+
+@utility corner-brackets {
+  position: relative;
+}
+@utility corner-brackets {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--color-khaki);
+  }
+  &::before {
+    top: -1px;
+    left: -1px;
+    border-right: none;
+    border-bottom: none;
+  }
+  &::after {
+    bottom: -1px;
+    right: -1px;
+    border-left: none;
+    border-top: none;
+  }
+}
+
+@utility noise {
+  position: relative;
+}
+@utility noise {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/></svg>");
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background-color: var(--color-khaki);
+    color: var(--color-background);
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(0.42 0.05 110) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: oklch(0.4 0.05 110);
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@utility tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
