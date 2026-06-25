@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objective First — HLL Tactical Map</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo-wrap">
+          <img src="assets/logo.png" alt="Objective First" class="brand-logo" width="52" height="52">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Tactical Map</span>
+          <span class="brand-sub">Hell Let Loose</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div id="currentMapName" class="current-map-name is-waiting">Waiting for live map…</div>
+        <div class="shortcuts-dropdown-wrap">
+          <button type="button" id="shortcutsToggle" class="header-btn" aria-expanded="false" aria-controls="shortcutsMenu">
+            ? Help
+          </button>
+          <div id="shortcutsMenu" class="shortcuts-dropdown" aria-hidden="true">
+            <div class="shortcuts-list">
+              <div class="shortcut-item">
+                <kbd>X</kbd>
+                <span>Toggle legend</span>
+              </div>
+              <div class="shortcut-item">
+                <kbd>Right-click</kbd>
+                <span>Open marker menu</span>
+              </div>
+              <div class="shortcut-item">
+                <kbd>Left-click</kbd>
+                <span>Place marker or delete</span>
+              </div>
+              <div class="shortcut-item">
+                <kbd>Scroll</kbd>
+                <span>Rotate arrow on line</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="squad-panel">
+      <span class="panel-label">Squads</span>
+      <div id="squadBar"></div>
+    </section>
+
+    <main class="map-stage">
+      <div id="map"></div>
+      <aside id="legend" class="legend-panel" aria-hidden="true">
+        <h3 class="legend-title">Legend</h3>
+        <section class="legend-section">
+          <h4>Markers</h4>
+          <p class="legend-note">Right-click to place markers · squad colour on orders only · spots &amp; pings are team-wide.</p>
+          <ul id="legendMarkers" class="legend-list"></ul>
+        </section>
+        <section class="legend-section">
+          <h4>Move lines</h4>
+          <p class="legend-note">Squad name on the line · arrow at the end shows direction.</p>
+          <ul id="legendMove" class="legend-list"></ul>
+        </section>
+      </aside>
+    </main>
+
+    <p id="hint" class="map-hint">
+      Draw a line, scroll to rotate the arrow · Scroll over a line later to adjust direction
+    </p>
+
+    <div id="menu" role="menu" aria-hidden="true"></div>
+  </div>
+
+  <!-- Scoreboard overlay (Tab key) -->
+  <div id="scoreboard" class="scoreboard" role="dialog" aria-label="Scoreboard">
+    <div class="scoreboard__inner">
+
+      <div class="scoreboard__header">
+        <div id="sb-map-name" class="sb-map-name">—</div>
+        <div class="sb-score-row">
+          <div class="sb-team sb-team--allies">
+            <span class="sb-team__name">ALLIES</span>
+            <span id="sb-allies-count" class="sb-team__count">—</span>
+          </div>
+          <div id="sb-sectors" class="sb-sectors"></div>
+          <div class="sb-team sb-team--axis">
+            <span id="sb-axis-count" class="sb-team__count">—</span>
+            <span class="sb-team__name">AXIS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scoreboard__columns">
+        <div class="scoreboard__col scoreboard__col--allies">
+          <div class="sb-col-head">
+            <span class="sb-col-head__name">Name</span>
+            <span class="sb-col-head__stat">K</span>
+            <span class="sb-col-head__stat">D</span>
+            <span class="sb-col-head__stat">K/D</span>
+            <span class="sb-col-head__stat" title="Combat">Cbt</span>
+            <span class="sb-col-head__stat" title="Offense">Off</span>
+            <span class="sb-col-head__stat" title="Defense">Def</span>
+            <span class="sb-col-head__stat" title="Support">Sup</span>
+            <span class="sb-col-head__squad">Squad</span>
+          </div>
+          <div id="sb-allies-list" class="sb-list"></div>
+        </div>
+        <div class="scoreboard__divider"></div>
+        <div class="scoreboard__col scoreboard__col--axis">
+          <div class="sb-col-head">
+            <span class="sb-col-head__name">Name</span>
+            <span class="sb-col-head__stat">K</span>
+            <span class="sb-col-head__stat">D</span>
+            <span class="sb-col-head__stat">K/D</span>
+            <span class="sb-col-head__stat" title="Combat">Cbt</span>
+            <span class="sb-col-head__stat" title="Offense">Off</span>
+            <span class="sb-col-head__stat" title="Defense">Def</span>
+            <span class="sb-col-head__stat" title="Support">Sup</span>
+            <span class="sb-col-head__squad">Squad</span>
+          </div>
+          <div id="sb-axis-list" class="sb-list"></div>
+        </div>
+      </div>
+
+      <div class="scoreboard__footer">Hold <kbd>TAB</kbd> to keep open &nbsp;·&nbsp; Click a player to manage</div>
+    </div>
+  </div>
+
+  <!-- Player admin panel -->
+  <div id="player-panel" class="player-panel" role="dialog" aria-label="Player actions" aria-modal="true">
+    <div class="player-panel__header">
+      <div class="player-panel__identity">
+        <div id="pp-name" class="player-panel__name">—</div>
+        <div id="pp-meta" class="player-panel__meta"></div>
+        <div id="pp-id"   class="player-panel__id"></div>
+      </div>
+      <button id="pp-close" class="player-panel__close" aria-label="Close">✕</button>
+    </div>
+
+    <div class="player-panel__body">
+
+      <section class="pp-section">
+        <label class="pp-label">Send message</label>
+        <div class="pp-row">
+          <input id="pp-message" class="pp-input" type="text" placeholder="Type a message…" maxlength="200">
+          <button class="pp-btn pp-btn--action" data-action="message">Send</button>
+        </div>
+      </section>
+
+      <section class="pp-section">
+        <label class="pp-label">Reason <span class="pp-hint">(used for actions below)</span></label>
+        <input id="pp-reason" class="pp-input" type="text" placeholder="Optional reason…" maxlength="200">
+      </section>
+
+      <section class="pp-section">
+        <label class="pp-label">Actions</label>
+        <div class="pp-action-grid">
+          <button class="pp-btn pp-btn--action" data-action="punish">Punish</button>
+          <button class="pp-btn pp-btn--action" data-action="kick">Kick</button>
+          <button class="pp-btn pp-btn--action" data-action="switch_team">Switch Team</button>
+          <button class="pp-btn pp-btn--action" data-action="watch">Watch</button>
+        </div>
+      </section>
+
+      <section class="pp-section">
+        <label class="pp-label">Temp ban</label>
+        <div class="pp-ban-grid">
+          <button class="pp-btn pp-btn--warn" data-action="temp_ban" data-hours="1">1h</button>
+          <button class="pp-btn pp-btn--warn" data-action="temp_ban" data-hours="6">6h</button>
+          <button class="pp-btn pp-btn--warn" data-action="temp_ban" data-hours="24">24h</button>
+          <button class="pp-btn pp-btn--warn" data-action="temp_ban" data-hours="72">3d</button>
+          <button class="pp-btn pp-btn--warn" data-action="temp_ban" data-hours="168">7d</button>
+          <button class="pp-btn pp-btn--warn" data-action="temp_ban" data-hours="720">30d</button>
+        </div>
+      </section>
+
+      <section class="pp-section">
+        <button class="pp-btn pp-btn--danger pp-btn--full" data-action="perma_ban">⚠ Permanent Ban</button>
+      </section>
+
+      <div id="pp-status" class="pp-status"></div>
+
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="markers.js?v=3"></script>
+  <script src="liveMap.js?v=6"></script>
+  <script src="app.js?v=3"></script>
+  <script src="scoreboard.js?v=2"></script>
+  <script src="playerPanel.js?v=1"></script>
+</body>
+</html>

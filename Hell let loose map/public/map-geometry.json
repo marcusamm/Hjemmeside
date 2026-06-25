@@ -1,0 +1,1124 @@
+{
+  "maps": {
+    "carentan": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "BLACTOT",
+          "name": "Blactot",
+          "x": -65543.41,
+          "y": -39731.965
+        },
+        {
+          "id": "502ND START",
+          "name": "502nd Start",
+          "x": -67076.41,
+          "y": 4670.035
+        },
+        {
+          "id": "FARM RUINS",
+          "name": "Farm Ruins",
+          "x": -68814.41,
+          "y": 37720.035
+        },
+        {
+          "id": "PUMPING STATION",
+          "name": "Pumping Station",
+          "x": -36748.406,
+          "y": -29821.965
+        },
+        {
+          "id": "RUINS",
+          "name": "Ruins",
+          "x": -26183.406,
+          "y": 2343.0352
+        },
+        {
+          "id": "DERAILED TRAIN",
+          "name": "Derailed Train",
+          "x": -39381.406,
+          "y": 28975.035
+        },
+        {
+          "id": "CANAL CROSSING",
+          "name": "Canal Crossing",
+          "x": 5892.5938,
+          "y": -39387.965
+        },
+        {
+          "id": "TOWN CENTER",
+          "name": "Town Center",
+          "x": 1021.59375,
+          "y": -1021.96484
+        },
+        {
+          "id": "TRAIN STATION",
+          "name": "Train Station",
+          "x": 246.59375,
+          "y": 27698.035
+        },
+        {
+          "id": "CUSTOMS",
+          "name": "Customs",
+          "x": 40816.594,
+          "y": -34224.965
+        },
+        {
+          "id": "RAIL CROSSING",
+          "name": "Rail Crossing",
+          "x": 44171.594,
+          "y": -6296.965
+        },
+        {
+          "id": "MONT HALAIS",
+          "name": "Mount Halais",
+          "x": 33828.594,
+          "y": 51343.035
+        },
+        {
+          "id": "CANAL LOCKS",
+          "name": "Canal Locks",
+          "x": 66826.59,
+          "y": -26456.965
+        },
+        {
+          "id": "RAIL CAUSEWAY",
+          "name": "Rail Causeway",
+          "x": 75611.59,
+          "y": 5968.035
+        },
+        {
+          "id": "LA MAISON DES ORMES",
+          "name": "La Maison Des Ormes",
+          "x": 72222.59,
+          "y": 38476.035
+        }
+      ]
+    },
+    "el-alamein": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false
+    },
+    "hill-400": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": true
+    },
+    "hurtgen-forest": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false
+    },
+    "mortain": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "HOTEL DE LA POSTE",
+          "name": "Hotel De La Poste",
+          "x": -71664.03,
+          "y": -47217.445
+        },
+        {
+          "id": "FORWARD BATTERY",
+          "name": "Forward Battery",
+          "x": -67949.4,
+          "y": 6438.873
+        },
+        {
+          "id": "SOUTHERN APPROACH",
+          "name": "Southern Approach",
+          "x": -70344.09,
+          "y": 46402.33
+        },
+        {
+          "id": "MORTAIN OUTSKIRTS",
+          "name": "Mortain Outskirts",
+          "x": -49136.977,
+          "y": -39819.566
+        },
+        {
+          "id": "FORWARD MEDICAL AID STATION",
+          "name": "Forward Medical Aid Station",
+          "x": -35275.574,
+          "y": -2194.1567
+        },
+        {
+          "id": "MORTAIN APPROACH",
+          "name": "Mortain Approach",
+          "x": -42775.5,
+          "y": 33050.027
+        },
+        {
+          "id": "HILL 314",
+          "name": "Hill 314",
+          "x": -2425.1055,
+          "y": -38259.5
+        },
+        {
+          "id": "LA PETITE CHAPELLE SAINT-MICHEL",
+          "name": "La Petite Chapelle Saint-Michel",
+          "x": 1725.2772,
+          "y": 5918.17
+        },
+        {
+          "id": "U.S. SOUTHERN ROADBLOCK",
+          "name": "U.S. Southern Roadblock",
+          "x": -11254.05,
+          "y": 49076.438
+        },
+        {
+          "id": "DESTROYED GERMAN CONVOY",
+          "name": "Destroyed German Convoy",
+          "x": 35469.836,
+          "y": -42255.99
+        },
+        {
+          "id": "GERMAN RECON CAMP",
+          "name": "German Recon Camp",
+          "x": 40439.145,
+          "y": -2510.7285
+        },
+        {
+          "id": "LES AUBRILS FARM",
+          "name": "Les Aubrils Farm",
+          "x": 48018.547,
+          "y": 26619.574
+        },
+        {
+          "id": "ABANDONED GERMAN CHECKPOINT",
+          "name": "Abandoned German Checkpoint",
+          "x": 68651.26,
+          "y": -40271.47
+        },
+        {
+          "id": "GERMAN DEFENSIVE CAMP",
+          "name": "German Defensive Camp",
+          "x": 68294.46,
+          "y": 1986.8845
+        },
+        {
+          "id": "LE FERME DU DESCHAMPS",
+          "name": "Le Ferme Du Deschamps",
+          "x": 71327.67,
+          "y": 36841.695
+        }
+      ]
+    },
+    "omaha-beach": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": true
+    },
+    "smolensk": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "PANZER LOADING STATION",
+          "name": "Panzer Loading Station",
+          "x": -68850.08,
+          "y": -40044.953
+        },
+        {
+          "id": "TRAM DEPOT",
+          "name": "Tram Depot",
+          "x": -67850.08,
+          "y": -5084.953
+        },
+        {
+          "id": "SMOLENSK OUTSKIRTS",
+          "name": "Smolensk Outskirts",
+          "x": -68850.08,
+          "y": 40680.047
+        },
+        {
+          "id": "SMOLENSK HAUPTBAHNHOF",
+          "name": "Smolensk Hauptbahnhof",
+          "x": -38450.08,
+          "y": -40044.953
+        },
+        {
+          "id": "LUMBER YARD",
+          "name": "Lumber Yard",
+          "x": -36050.08,
+          "y": 8915.047
+        },
+        {
+          "id": "DNIEPER WEST CROSSING",
+          "name": "Dnieper West Crossing",
+          "x": -40450.08,
+          "y": 39680.047
+        },
+        {
+          "id": "PYATNITSKII OVERPASS",
+          "name": "Pyatnitskii Overpass",
+          "x": 1000,
+          "y": -38544.953
+        },
+        {
+          "id": "ZHELYABOVA SQUARE",
+          "name": "Zhelyabova Square",
+          "x": 1000,
+          "y": 0
+        },
+        {
+          "id": "84TH BATTALION BRIDGE",
+          "name": "84th Battalion Bridge",
+          "x": 1000,
+          "y": 40680.047
+        },
+        {
+          "id": "ZADNEPROVIE DISTRICT",
+          "name": "Zadneprovie District",
+          "x": 39264.92,
+          "y": -40444.953
+        },
+        {
+          "id": "MOSKOVSKAYA STREET",
+          "name": "Moskovskaya Street",
+          "x": 39764.92,
+          "y": -1084.9531
+        },
+        {
+          "id": "SMOLENSK CITADEL",
+          "name": "Smolensk Citadel",
+          "x": 39264.92,
+          "y": 40680.047
+        },
+        {
+          "id": "RAILYARD STORAGE",
+          "name": "Railyard Storage",
+          "x": 68709.92,
+          "y": -40044.953
+        },
+        {
+          "id": "APARTMENT BLOCK",
+          "name": "Apartment Block",
+          "x": 69209.92,
+          "y": -1084.9531
+        },
+        {
+          "id": "BOMBARDED RIVERFRONT",
+          "name": "Bombarded Riverfront",
+          "x": 69209.92,
+          "y": 40080.047
+        }
+      ]
+    },
+    "stalingrad": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "MAMAYEV APPROACH",
+          "name": "Mamayev Approach",
+          "x": -69500,
+          "y": -47966
+        },
+        {
+          "id": "NAIL FACTORY",
+          "name": "Nail Factory",
+          "x": -71016,
+          "y": 11068
+        },
+        {
+          "id": "CITY OVERLOOK",
+          "name": "City Overlook",
+          "x": -69346,
+          "y": 48417
+        },
+        {
+          "id": "DOLGIY RAVINE",
+          "name": "Dolgiy Ravine",
+          "x": -39681,
+          "y": -48845
+        },
+        {
+          "id": "YELLOW HOUSE",
+          "name": "Yellow House",
+          "x": -39693.438,
+          "y": -1.544678
+        },
+        {
+          "id": "KOMSOMOL HQ",
+          "name": "Komsomol HQ",
+          "x": -39683,
+          "y": 39676
+        },
+        {
+          "id": "RAILWAY CROSSING",
+          "name": "Railway Crossing",
+          "x": 7,
+          "y": -39673
+        },
+        {
+          "id": "CARRIAGE DEPOT",
+          "name": "Carriage Depot",
+          "x": -15,
+          "y": 13
+        },
+        {
+          "id": "TRAIN STATION",
+          "name": "Train Station",
+          "x": 6,
+          "y": 39678
+        },
+        {
+          "id": "HOUSE OF THE WORKERS",
+          "name": "House Of The Workers",
+          "x": 36591,
+          "y": -40602
+        },
+        {
+          "id": "PAVLOV'S HOUSE",
+          "name": "Pavlov's House",
+          "x": 48586,
+          "y": 1452
+        },
+        {
+          "id": "THE BREWERY",
+          "name": "The Brewery",
+          "x": 39674,
+          "y": 41970
+        },
+        {
+          "id": "L-SHAPED HOUSE",
+          "name": "L-Shaped House",
+          "x": 68875,
+          "y": -35043
+        },
+        {
+          "id": "GRUDININ'S MILL",
+          "name": "Grudinin's Mill",
+          "x": 70063,
+          "y": -32
+        },
+        {
+          "id": "VOLGA BANKS",
+          "name": "Volga Banks",
+          "x": 70121,
+          "y": 43351
+        }
+      ]
+    },
+    "sainte-mere-eglise": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": true
+    },
+    "tobruk": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "GUARD ROOM",
+          "name": "Guard Room",
+          "x": -68855,
+          "y": -27530
+        },
+        {
+          "id": "TANK GRAVEYARD",
+          "name": "Tank Graveyard",
+          "x": -69405,
+          "y": -2075
+        },
+        {
+          "id": "DIVISION HEADQUARTERS",
+          "name": "Division Headquarters",
+          "x": -69835,
+          "y": 45005
+        },
+        {
+          "id": "WEST CREEK",
+          "name": "West Creek",
+          "x": -40077,
+          "y": -44015
+        },
+        {
+          "id": "ALBERGO RISTORANTE MODERNO",
+          "name": "Albergo Ristorante Moderno",
+          "x": -29536.549,
+          "y": 2241
+        },
+        {
+          "id": "KING SQUARE",
+          "name": "King Square",
+          "x": -29485.152,
+          "y": 39744.316
+        },
+        {
+          "id": "DESERT RAT CAVES",
+          "name": "Desert Rat Caves",
+          "x": 31.221313,
+          "y": -39665.25
+        },
+        {
+          "id": "CHURCH GROUNDS",
+          "name": "Church Grounds",
+          "x": 59.92363,
+          "y": 11770.049
+        },
+        {
+          "id": "ADMIRALTY HOUSE",
+          "name": "Admiralty House",
+          "x": 7919.4326,
+          "y": 48901.832
+        },
+        {
+          "id": "ABANDONED AMMO CACHE",
+          "name": "Abandoned Ammo Cache",
+          "x": 39687.508,
+          "y": -39659.996
+        },
+        {
+          "id": "8TH ARMY MEDICAL HOSPITAL",
+          "name": "8th Army Medical Hospital",
+          "x": 40124.035,
+          "y": -2845
+        },
+        {
+          "id": "SUPPLY DUMP",
+          "name": "Supply Dump",
+          "x": 39820.547,
+          "y": 43918.36
+        },
+        {
+          "id": "ROAD TO SENUSSI MINE",
+          "name": "Road To Senussi Mine",
+          "x": 69522.8,
+          "y": -40790
+        },
+        {
+          "id": "MAKESHIFT AID STATION",
+          "name": "Makeshift Aid Station",
+          "x": 69380,
+          "y": 25
+        },
+        {
+          "id": "CARGO WAREHOUSES",
+          "name": "Cargo Warehouses",
+          "x": 70047.33,
+          "y": 41171.96
+        }
+      ]
+    },
+    "utah-beach": {
+      "orientation": "horizontal",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": true
+    },
+    "driel": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "OOSTERBEEK APPROACH",
+          "name": "Oosterbeek Approach",
+          "x": -36028.543,
+          "y": -79955.25
+        },
+        {
+          "id": "ROSANDER POLDER",
+          "name": "Roseander Polder",
+          "x": 2809.0745,
+          "y": -78795.875
+        },
+        {
+          "id": "KASTEEL ROSANDE",
+          "name": "Kasteel Rosande",
+          "x": 38371.14,
+          "y": -76418.7
+        },
+        {
+          "id": "BOATYARD",
+          "name": "Boatyard",
+          "x": -38518.715,
+          "y": -33980.625
+        },
+        {
+          "id": "BRIDGEWAY",
+          "name": "Bridgeway",
+          "x": 3880.9673,
+          "y": -39449.43
+        },
+        {
+          "id": "RIJN BANKS",
+          "name": "Rijn Banks",
+          "x": 39177.535,
+          "y": -42960.49
+        },
+        {
+          "id": "BRICK FACTORY",
+          "name": "Brick Factory",
+          "x": -39703.027,
+          "y": 6122.7656
+        },
+        {
+          "id": "RAILWAY BRIDGE",
+          "name": "Railway Bridge",
+          "x": 2882.3755,
+          "y": -3877.2988
+        },
+        {
+          "id": "GUN EMPLACEMENTS",
+          "name": "Gun Emplacements",
+          "x": 43301.99,
+          "y": -2530.0012
+        },
+        {
+          "id": "RIETVELD",
+          "name": "Rietveld",
+          "x": -40615.844,
+          "y": 40909.707
+        },
+        {
+          "id": "SOUTH RAILWAY",
+          "name": "South Railway",
+          "x": 3826.8418,
+          "y": 42206.754
+        },
+        {
+          "id": "MIDDEL ROAD",
+          "name": "Middel Road",
+          "x": 41461.46,
+          "y": 38457.824
+        },
+        {
+          "id": "ORCHARDS",
+          "name": "Orchards",
+          "x": -39533.195,
+          "y": 77266.98
+        },
+        {
+          "id": "SCHADUWWOLKEN FARM",
+          "name": "Schaduwwolken Farm",
+          "x": -2113.1738,
+          "y": 75816.06
+        },
+        {
+          "id": "FIELDS",
+          "name": "Fields",
+          "x": 41461.46,
+          "y": 75453.516
+        }
+      ]
+    },
+    "elsenborn-ridge": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false
+    },
+    "foy": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "ROAD TO RECOGNE",
+          "name": "Road To Recogne",
+          "x": -49755,
+          "y": -74340
+        },
+        {
+          "id": "COBRU APPROACH",
+          "name": "Cobru Approach",
+          "x": 9952,
+          "y": -74787
+        },
+        {
+          "id": "ROAD TO NOVILLE",
+          "name": "Road To Noville",
+          "x": 38286.176,
+          "y": -76947.95
+        },
+        {
+          "id": "COBRU FACTORY",
+          "name": "Cobru Factory",
+          "x": -29988,
+          "y": -44676
+        },
+        {
+          "id": "FOY",
+          "name": "Foy",
+          "x": -9586,
+          "y": -34052
+        },
+        {
+          "id": "FLAK BATTERY",
+          "name": "Flak Battery",
+          "x": 45241,
+          "y": -39594
+        },
+        {
+          "id": "WEST BEND",
+          "name": "West Bend",
+          "x": -53153,
+          "y": -12966
+        },
+        {
+          "id": "SOUTHERN EDGE",
+          "name": "Southern Edge",
+          "x": -1114,
+          "y": 589
+        },
+        {
+          "id": "DUGOUT BARN",
+          "name": "Dugout Barn",
+          "x": 46085.04,
+          "y": -4721.094
+        },
+        {
+          "id": "N30 HIGHWAY",
+          "name": "N30 Highway",
+          "x": -38407,
+          "y": 31775
+        },
+        {
+          "id": "BIZORY-FOY ROAD",
+          "name": "Bizory-Foy Road",
+          "x": 10035,
+          "y": 39390
+        },
+        {
+          "id": "EASTERN OURTHE",
+          "name": "Eastern Ourthe",
+          "x": 45845,
+          "y": 27822
+        },
+        {
+          "id": "ROAD TO BASTOGNE",
+          "name": "Road To Bastogne",
+          "x": -52862,
+          "y": 63773
+        },
+        {
+          "id": "BOIS JACQUES",
+          "name": "Bois Jacques",
+          "x": -5582,
+          "y": 68237
+        },
+        {
+          "id": "FOREST OUTSKIRTS",
+          "name": "Forest Outskirts",
+          "x": 46279,
+          "y": 67141
+        }
+      ]
+    },
+    "juno-beach": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false
+    },
+    "kharkov": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "MARSH TOWN",
+          "name": "Marsh Town",
+          "x": -36517.52,
+          "y": -70661.75
+        },
+        {
+          "id": "SOVIET VANTAGE POINT",
+          "name": "Soviet Vantage Point",
+          "x": 8032.91,
+          "y": -70714.63
+        },
+        {
+          "id": "GERMAN FUEL DUMP",
+          "name": "German Fuel Dump",
+          "x": 41168.312,
+          "y": -70231.15
+        },
+        {
+          "id": "BITTER SPRING",
+          "name": "Bitter Spring",
+          "x": -37433.285,
+          "y": -38891.406
+        },
+        {
+          "id": "LUMBER WORKS",
+          "name": "Lumber Works",
+          "x": 7916.1367,
+          "y": -39814.156
+        },
+        {
+          "id": "WINDMILL HILLSIDE",
+          "name": "Windmill Hillside",
+          "x": 46877.23,
+          "y": -41370.87
+        },
+        {
+          "id": "WATER MILL",
+          "name": "Water Mill",
+          "x": -36761.05,
+          "y": -3563.8867
+        },
+        {
+          "id": "ST MARY",
+          "name": "St Mary",
+          "x": 6074.9873,
+          "y": -633.23
+        },
+        {
+          "id": "DISTILLERY",
+          "name": "Distillery",
+          "x": 44449.215,
+          "y": -4542.487
+        },
+        {
+          "id": "RIVER CROSSING",
+          "name": "River Crossing",
+          "x": -27116.355,
+          "y": 40003.023
+        },
+        {
+          "id": "BELGOROD OUTSKIRTS",
+          "name": "Belgorod Outskirts",
+          "x": 8105.9688,
+          "y": 38673.008
+        },
+        {
+          "id": "LUMBERYARD",
+          "name": "Lumberyard",
+          "x": 46774.79,
+          "y": 37490.91
+        },
+        {
+          "id": "WEHRMACHT OUTLOOK",
+          "name": "Wehrmacht Overlook",
+          "x": -37313.91,
+          "y": 72972.37
+        },
+        {
+          "id": "HAY STORAGE",
+          "name": "Hay Storage",
+          "x": 4240.6523,
+          "y": 71736.38
+        },
+        {
+          "id": "OVERPASS",
+          "name": "Overpass",
+          "x": 41180.39,
+          "y": 70416.95
+        }
+      ]
+    },
+    "kursk": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "ARTILLERY POSITION",
+          "name": "Artillery Position",
+          "x": -35117,
+          "y": -68921
+        },
+        {
+          "id": "GRUSHKI",
+          "name": "Grushki",
+          "x": 7070,
+          "y": -68141
+        },
+        {
+          "id": "GRUSHKI FLANK",
+          "name": "Grushki Flank",
+          "x": 47151,
+          "y": -67169
+        },
+        {
+          "id": "PANZER'S END",
+          "name": "Panzer's End",
+          "x": -35117,
+          "y": -31958
+        },
+        {
+          "id": "DEFENCE IN DEPTH",
+          "name": "Defence In Depth",
+          "x": 1604,
+          "y": -34906
+        },
+        {
+          "id": "LISTENING POST",
+          "name": "Listening Post",
+          "x": 40413,
+          "y": -36000
+        },
+        {
+          "id": "THE WINDMILLS",
+          "name": "The Windmills",
+          "x": -26712.39,
+          "y": -4842.251
+        },
+        {
+          "id": "YAMKI",
+          "name": "Yamki",
+          "x": 9609,
+          "y": 3974
+        },
+        {
+          "id": "OLEG'S HOUSE",
+          "name": "Oleg's House",
+          "x": 39754,
+          "y": 7774
+        },
+        {
+          "id": "RUDNO",
+          "name": "Rudno",
+          "x": -27089,
+          "y": 40069
+        },
+        {
+          "id": "DESTROYED BATTERY",
+          "name": "Destroyed Battery",
+          "x": -990,
+          "y": 39981
+        },
+        {
+          "id": "THE MUDDY CHURN",
+          "name": "The Muddy Churn",
+          "x": 41089,
+          "y": 42772
+        },
+        {
+          "id": "ROAD TO KURSK",
+          "name": "Road To Kursk",
+          "x": -31287,
+          "y": 68120
+        },
+        {
+          "id": "AMMO DUMP",
+          "name": "Ammo Dump",
+          "x": -1729,
+          "y": 66294
+        },
+        {
+          "id": "EASTERN POSITION",
+          "name": "Eastern Position",
+          "x": 36100,
+          "y": 65758
+        }
+      ]
+    },
+    "purple-heart-lane": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false
+    },
+    "remagen": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false,
+      "points": [
+        {
+          "id": "ALTE LIEBE BARSCH",
+          "name": "Alte Liebe Barsch",
+          "x": -41114,
+          "y": -69583
+        },
+        {
+          "id": "BEWALDET KREUZUNG",
+          "name": "Bewaldet Kreuzung",
+          "x": -891,
+          "y": -69550
+        },
+        {
+          "id": "DAN RADART 512",
+          "name": "Dan Radart 512",
+          "x": 41625,
+          "y": -69063
+        },
+        {
+          "id": "ERPEL",
+          "name": "Erpel",
+          "x": -39275,
+          "y": -40853
+        },
+        {
+          "id": "ERPELER LEY",
+          "name": "Erpeler Ley",
+          "x": 9697,
+          "y": -42679
+        },
+        {
+          "id": "KASBACH OUTLOOK",
+          "name": "Kasbach Outlook",
+          "x": 38436.418,
+          "y": -41098.23
+        },
+        {
+          "id": "ST. SEVERIN CHAPEL",
+          "name": "St Severin Chapel",
+          "x": -39275,
+          "y": -12967
+        },
+        {
+          "id": "LUDENDORFF BRIDGE",
+          "name": "Ludendorff Bridge",
+          "x": 3032.2412,
+          "y": 7.0210953
+        },
+        {
+          "id": "BAUERNHOF AM RHEIN",
+          "name": "Bauernhof Am Rhein",
+          "x": 38817.02,
+          "y": 15613.944
+        },
+        {
+          "id": "REMAGEN",
+          "name": "Remagen",
+          "x": -35925.75,
+          "y": 39434
+        },
+        {
+          "id": "MÖBELFABRIK",
+          "name": "Möbelfabrik",
+          "x": -1000,
+          "y": 40824
+        },
+        {
+          "id": "SCHLIEFFEN AUSWEG",
+          "name": "Schlieffen Ausweg",
+          "x": 39053,
+          "y": 38264
+        },
+        {
+          "id": "WALDBURG",
+          "name": "Waldburg",
+          "x": -40954.977,
+          "y": 80279.71
+        },
+        {
+          "id": "MÜHLENWEG",
+          "name": "Mühlenweg",
+          "x": 3742.6152,
+          "y": 72094.91
+        },
+        {
+          "id": "HAGELKREUZ",
+          "name": "Hagelkreuz",
+          "x": 37607.746,
+          "y": 68933.32
+        }
+      ]
+    },
+    "sainte-marie-du-mont": {
+      "orientation": "vertical",
+      "bounds": {
+        "minX": -100000,
+        "maxX": 100000,
+        "minY": -100000,
+        "maxY": 100000
+      },
+      "mirror_factions": false
+    }
+  }
+}

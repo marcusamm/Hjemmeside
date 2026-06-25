@@ -1,0 +1,25 @@
+{
+  "name": "hll-live-map",
+  "version": "1.0.0",
+  "description": "Live tactical map for Hell Let Loose",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "hll",
+    "tactical-map",
+    "gaming",
+    "hell-let-loose"
+  ],
+  "author": "Objective-first",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
